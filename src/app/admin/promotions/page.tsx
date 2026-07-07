@@ -4,7 +4,7 @@ import { PromoManager } from '@/components/admin/PromoManager';
 export const dynamic = 'force-dynamic';
 
 export default async function AdminPromotionsPage() {
-  const promos = await prisma.promoCode.findMany({ orderBy: { createdAt: 'desc' } });
+  const promos = await prisma.promoCode.findMany({ orderBy: { startsAt: 'desc' } });
   return (
     <div>
       <header className="mb-8">
