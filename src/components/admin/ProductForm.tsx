@@ -82,7 +82,7 @@ export function ProductForm({ product, categories, brands }: { product?: any; ca
 
       <Section title="Images (URLs)">
         <div className="space-y-2">
-          {form.images.map((url, i) => (
+          {form.images.map((url: string, i: number) => (
             <div key={i} className="flex gap-2">
               <input className="input-luxe" value={url} onChange={(e) => { const c = [...form.images]; c[i] = e.target.value; setForm({ ...form, images: c }); }} />
               <button type="button" onClick={() => setForm({ ...form, images: form.images.filter((_, j) => j !== i) })} aria-label="Supprimer l'image" className="rounded p-2 text-ink-300 hover:text-red-400"><Trash2 className="h-4 w-4" /></button>
