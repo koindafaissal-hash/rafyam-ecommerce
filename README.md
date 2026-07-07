@@ -250,4 +250,4 @@ Le site est livré en **français**. Pour ajouter une langue :
 
 ## 📝 Licence
 
-Code propriétaire — © 2026 RAF'YAM. Tous droits réservés.
+Code propriétaire — © 2026 RAF'YAM. Tous droits réservés.// test webhook
