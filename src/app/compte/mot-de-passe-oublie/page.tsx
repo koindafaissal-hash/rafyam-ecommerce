@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Suspense } from 'react';
 import { AuthForm } from '@/components/account/AuthForm';
 import type { Metadata } from 'next';
 export const metadata: Metadata = { title: 'Mot de passe oublié' };
