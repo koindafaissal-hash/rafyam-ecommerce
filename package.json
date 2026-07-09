@@ -5,7 +5,7 @@
   "description": "RAF'YAM — Boutique en ligne de chaussures de luxe pour hommes",
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && next build",
+    "build": "prisma generate && prisma db push --accept-data-loss && next build",
     "start": "next start",
     "lint": "next lint",
     "db:push": "prisma db push",
